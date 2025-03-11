@@ -6,10 +6,12 @@ import About from './Pages/About';
 import SignOut from './Pages/SignOut';
 import Home from './Pages/Home';
 import Profile from './Pages/Profile';
+import Header from './component/Header';
 
 function App() {
    return (
-   
+   <>
+   <Header />
    <Routes>
    <Route path='/signIn' element={<SignIn/>}/>
    <Route path='/about' element={<About/>}/>
@@ -18,6 +20,7 @@ function App() {
    <Route path='/profile' element={<Profile/>}/>
 </Routes>
 
+</>
   )
 }
 
